@@ -118,7 +118,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"modal\", function() { return modal; });\nconst modal = () => {\n  const modal = document.querySelector('.modal');\n  const modalClose = document.querySelector('.modal__close');\n  const modalOpen = document.querySelectorAll('.modal__open');\n  const body = document.querySelector(\"body\");\n  modalOpen.forEach(item => {\n    item.addEventListener('click', () => {\n      modal.classList.add('open');\n      body.classList.add('open');\n    });\n  });\n  modalClose.addEventListener('click', () => {\n    modal.classList.remove('open');\n    body.classList.remove('open');\n  });\n};\n\n\n//# sourceURL=webpack:///./js/modules/modal.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"modal\", function() { return modal; });\nconst modal = () => {\n  const modal = document.querySelector('.modal');\n  const modalClose = document.querySelector('.modal__close');\n  const modalOpen = document.querySelectorAll('.modal__open');\n  const page = document.querySelector(\".page\");\n  modalOpen.forEach(item => {\n    item.addEventListener('click', () => {\n      modal.classList.add('open');\n      page.classList.add('open');\n    });\n  });\n  modalClose.addEventListener('click', () => {\n    modal.classList.remove('open');\n    page.classList.remove('open');\n  });\n};\n\n\n//# sourceURL=webpack:///./js/modules/modal.js?");
 
 /***/ }),
 
