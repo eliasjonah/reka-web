@@ -1457,7 +1457,7 @@ a:hover
 
     height: 100%;
 
-    background-image: url(../img/bg/map-desk.jpg);
+    background-image: url('/img/bg/map-desk.jpg');
     background-repeat: no-repeat;
     background-position: right;
     background-size: inherit;
@@ -2829,7 +2829,20 @@ body.is-open
 
         height: auto;
 
+        border-bottom: none;
+
         grid-template-columns: 100%;
+    }
+    .powers__img
+    {
+        border-top: 1px solid #4d4d4d;
+        border-bottom: 1px solid #4d4d4d;
+        border-left: none;
+    }
+    .powers__slider
+    {
+        border-top: 1px solid #4d4d4d;
+        border-left: none;
     }
     .powers__buttons
     {
