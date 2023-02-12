@@ -1144,10 +1144,7 @@ a:hover
 }
 .footer__ticker
 {
-    width: -webkit-fill-available;
-
-    border: 1px solid #4d4d4d;
-    border-bottom: none;
+    width: 100%;
 
     flex-grow: 1;
 }
@@ -1156,7 +1153,7 @@ a:hover
     display: block;
     overflow: hidden;
 
-    width: -webkit-fill-available;
+    width: 100%;
 
     border: 1px solid #4d4d4d;
     border-top: none;
@@ -1460,9 +1457,10 @@ a:hover
 
     height: 100%;
 
-    background-image: url(../img/bg/map-desk.svg);
+    background-image: url('/img/bg/map-desk.jpg');
     background-repeat: no-repeat;
     background-position: right;
+    background-size: inherit;
 
     align-items: flex-start;
     justify-content: space-between;
@@ -2276,6 +2274,7 @@ a:hover
 
     border: 1px solid #4d4d4d;
     border-radius: 100px;
+    outline: none;
 }
 .powers__btn:hover
 {
@@ -2854,7 +2853,7 @@ body.is-open
     {
         border: none;
 
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(1, 1fr) !important;
     }
     .workers__item
     {
@@ -2963,6 +2962,18 @@ body.is-open
     .powers
     {
         padding-top: 64px;
+    }
+    .powers__header
+    {
+        padding: 0 15px;
+    }
+    .powers__count
+    {
+        padding: 24px 15px;
+    }
+    .powers__info
+    {
+        padding: 24px 15px;
     }
 }
 
