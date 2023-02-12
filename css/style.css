@@ -2842,6 +2842,7 @@ body.is-open
     .powers__slider
     {
         border-top: 1px solid #4d4d4d;
+        border-bottom: 1px solid #4d4d4d;
         border-left: none;
     }
     .powers__buttons
